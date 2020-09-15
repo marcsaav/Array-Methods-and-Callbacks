@@ -4,20 +4,21 @@ console.log(fifaData);
 console.log('its working');
 // ⚽️ M  V P ⚽️ //
 
-/* Task 1: Investigate the data above. Practice accessing data by console.log-ing the following pieces of data
+// Task 1: Investigate the data above. Practice accessing data by console.log-ing the following pieces of data
 
-(a) Home Team name for 2014 world cup final
-    let final2014 = fifaData.filter(item => item.stage === "Final" && item.year === "2014");
-    console.log(final2014[0].HomeTeamName)
-(b) Away Team name for 2014 world cup final
-    console.log(final2014[0].AwayTeamName)
-(c) Home Team goals for 2014 world cup final
-    console.log(final2014[0].HomeTeamGoals)
-(d) Away Team goals for 2014 world cup final
-    console.log(final2014[0].AwayTeamGoals)
-(e) Winner of 2014 world cup final
-    console.log(final2014[0].Winconditions)
- /*
+let final2014 = fifaData.filter(item => item.Stage === "Final" && item.Year === 2014);
+
+// (a) Home Team name for 2014 world cup final
+    console.log(final2014[0]["Home Team Name"])
+// (b) Away Team name for 2014 world cup final
+    console.log(final2014[0]["Away Team Name"])
+// (c) Home Team goals for 2014 world cup final
+    console.log(final2014[0]["Home Team Goals"])
+// (d) Away Team goals for 2014 world cup final
+    console.log(final2014[0]["Away Team Goals"])
+// (e) Winner of 2014 world cup final
+    console.log(final2014[0]["Win conditions"])
+
 
 
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
